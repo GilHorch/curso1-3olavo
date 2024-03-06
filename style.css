@@ -35,3 +35,9 @@ font-size: 32px;
 .titulo-principal span{
 color: var(--verde);    
 }
+.botao{
+
+font-family: 'Chakra Petch', sans-serif;
+background-color: var(--botao-inativo);
+
+}
