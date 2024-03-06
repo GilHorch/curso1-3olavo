@@ -39,5 +39,11 @@ color: var(--verde);
 
 font-family: 'Chakra Petch', sans-serif;
 background-color: var(--botao-inativo);
-
+color: var(--branco);
+display: flex;
+justify-content: center;
+padding: 1em;
+font-size: 18px;
+align-items: center;
+width: 100%;
 }
