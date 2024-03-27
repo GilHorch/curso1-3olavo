@@ -58,12 +58,18 @@ body {
     border-radius: 40px 40px 0 0;
 }
 
-.botao {
+.botoes {
     display: block;
 }
-.ativo{
+.botao .ativo{
 background-color: var(--botao-ativo);
 border-bottom: 4px solid var(--verde);
+}
+.abas-textos{
+background-color: var(--cor-de-fundo);
+padding: 40px;
+border-radius: 0 0 40px 40px;
+
 }
 
 @media screen and (min-width: 768px) {
