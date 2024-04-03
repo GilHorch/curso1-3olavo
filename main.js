@@ -16,7 +16,7 @@ for (let i = 0; i < botoes.length; i++) {// loop que executa enquanto i<quantida
 
     const contadores = document.querySelectorAll(".contador");
 
-    const tempoObjetivo1 = new Date("24-10-06")
+    const tempoObjetivo1 = new Date("24-10-06T00:00:00")
 
     contadores[0].textContent = tempoObjetivo1;
 
