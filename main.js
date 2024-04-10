@@ -3,7 +3,7 @@ const textos = document.querySelectorAll(".aba-conteudo");//variável que armaze
 
 for (let i = 0; i < botoes.length; i++) {// loop que executa enquanto i<quantidade de botoes
 
-    botoes[i].onclick = function () {//cria uma função 
+    botoes[i].onclick = function () { //cria uma função 
 
         for (let j = 0; j < botoes.length; j++) { // loop que executa enquanto j<quantidade de botoes
             botoes[j].classList.remove("ativo");  //remove a palavra ativo da classe.
@@ -20,7 +20,7 @@ const tempoObjetivo2 = new Date("2024-10-05T00:00:00");
 const tempoObjetivo3 = new Date("2024-10-05T00:00:00");
 const tempoObjetivo4 = new Date("2024-10-05T00:00:00");
 
-const tempos[tempoObjetivo1,tempoObjetivo2,tempoObjetivo3,tempoObjetivo4];
+const tempos=[tempoObjetivo1,tempoObjetivo2,tempoObjetivo3,tempoObjetivo4];
 
 for (let i=0;i<contadores.length;i++)
 {
