@@ -95,7 +95,11 @@ text-align: center;
     text-transform: uppercase;/*deixa o texto em maiúsculo*/
     
 }
+.contador{
+font-size: 20px;
+text-align: center;
 
+}
 @media screen and (min-width: 768px) {
     .botoes {
         display: flex;
