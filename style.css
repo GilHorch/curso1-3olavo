@@ -96,8 +96,7 @@ text-align: center;
     
 }
 .contador{
-font-size: 20px;
-text-align: center;
+display: flex;
 
 }
 @media screen and (min-width: 768px) {
