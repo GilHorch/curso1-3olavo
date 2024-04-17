@@ -34,13 +34,16 @@ function calculaTempo(tempoObjetivo) {
     segundos %= 60;
     minutos %= 60;
     horas %= 24;
-    return [dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos"];
-    //print(dias);
+    if (tempoFinal > 0) {
+        return [dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos"];
+        //print(dias);
+    }
+    else{return "Pazo Finalizado"}
 }
-function atualizaCronometro(}{
+function atualizaCronometro() {
     for (let i = o; i < contadores.length; i++) {
-    contadores[i]textContent = calculaTempo(tempos[i]);
-}
+        contadores[i]textContent = calculaTempo(tempos[i]);
+    }
 }
 function comecaCronometro() {
     atualizaCronometro();
