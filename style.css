@@ -85,27 +85,39 @@ body {
     display: none;
 }
 
-.aba-conteudo-titulo-principal{
-font-size: 28px;
-text-align: center;
+.aba-conteudo-titulo-principal {
+    font-size: 28px;
+    text-align: center;
 }
-.aba-conteudo-titulo-secundario{
-    text-align: center;/*alinha o texo ao centro*/
-    color: var(--verde);/*Cor do texto*/
-    text-transform: uppercase;/*deixa o texto em maiúsculo*/
-    
-}
-.contador{
-display: flex;
+
+.aba-conteudo-titulo-secundario {
+    text-align: center;
+    /*alinha o texo ao centro*/
+    color: var(--verde);
+    /*Cor do texto*/
+    text-transform: uppercase;
+    /*deixa o texto em maiúsculo*/
 
 }
+
+.contador {
+    display: flex;
+    justify-content: center;
+}
+
+.contador-digito {
+    padding: 0 16px;
+}
+
 @media screen and (min-width: 768px) {
     .botoes {
         display: flex;
     }
+
     .botao:first-child {
         border-radius: 40px 0 0 0;
     }
+
     .botao:last-child {
         border-radius: 0 40px 0 0;
     }
