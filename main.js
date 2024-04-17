@@ -12,7 +12,6 @@ for (let i = 0; i < botoes.length; i++) {// loop que executa enquanto i<quantida
         botoes[i].classList.add("ativo");//adiciona a palavra ativo da classe.
         textos[i].classList.add("ativo");//adiciona a palavra ativo da classe.
     }
-
 }
 const contadores = document.querySelectorAll(".contador");
 const tempoObjetivo1 = new Date("2024-10-05T00:00:00");
@@ -22,11 +21,22 @@ const tempoObjetivo4 = new Date("2024-10-05T00:00:00");
 
 const tempos = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];
 
+
+function atualizaCronometro(}{
+    for (let i=o; i<contadores.length;i++) {
+        
+        contadores[i]textContent=calculaTempo(tempos[i]);
+    }
+}
+atualizaCronometro();
+
+setInterval(atualizaCronometro,1000);
+
+
+
 for (let x = 0; x < contadores.length; x++) {
     contadores[x].textContent = calculaTempo(tempos[x]);
 }
-
-
 function calculaTempo(tempoObjetivo) {
     let tempoAtual = new Date();
     let tempoFinal = tempoObjetivo - tempoAtual;
