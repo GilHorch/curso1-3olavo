@@ -41,8 +41,8 @@ function calculaTempo(tempoObjetivo) {
     else {return "Prazo Finalizado"}
 }
 function atualizaCronometro() {
-    for (let i = o; i < contadores.length; i++) {
-        contadores[i].textContent = calculaTempo(tempos[i]);
+    for (let y = o; y < contadores.length; y++) {
+        contadores[y].textContent = calculaTempo(tempos[y]);
     }
 }
 function comecaCronometro() {
