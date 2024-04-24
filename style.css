@@ -100,7 +100,7 @@ body {
 
 }
 
-.contador{
+.contador {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -110,14 +110,16 @@ body {
     padding: 0 16px;
     text-align: center;
     min-width: 100px;
-    
+
 }
-.contador-digito-numero{
+
+.contador-digito-numero {
     font-size: 80;
     margin: 0;
 
 }
-.contador-difgito-texto{
+
+.contador-difgito-texto {
     color: var(--verde);
     font-size: 20px;
     margin: 0;
