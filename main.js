@@ -27,7 +27,7 @@ for (let x = 0; x < contadores.length; x++) {
 function calculaTempo(tempoObjetivo) {
     let tempoAtual = new Date();
     let tempoFinal = tempoObjetivo - tempoAtual;
-    
+
     let segundos = Math.floor(tempoFinal / 1000);
     let minutos = Math.floor(segundos / 60);
     let horas = Math.floor(minutos / 60);
@@ -39,18 +39,20 @@ function calculaTempo(tempoObjetivo) {
     if (tempoFinal > 0) { return [dias, horas, minutos, segundos]; }
     else { return [0, 0, 0, 0]; }
 }
-function atualizaCronometro() {
-    document.getElementById("dias0").calculaTempo(tempo[0])[0];
-    document.getElementById("horas0").calculaTempo(tempo[0])[1];
-    document.getElementById("minutos0").calculaTempo(tempo[0])[2];
-    document.getElementById("segundo0").calculaTempo(tempo[0])[2];
+function atualizaCronometro(){
+    document.getElementById("dias0").textContent = calculaTempo(tempos[0])[0];
+    document.getElementById("horas0").textContent = calculaTempo(tempos[0])[1];
+    document.getElementById("minutos0").textContent = calculaTempo(tempos[0])[2];
+    document.getElementById("segundos0").textContent = calculaTempo(tempos[0])[3];
 
-    for (let y = o; y < contadores.length; y++) {
-        //contadores[y].textContent = calculaTempo(tempos[y]);
+    for (let i=0; i<contadores.length;i++){
+       // contadores[i].textContent = calculaTempo(tempos[i]);   
     }
 }
-function comecaCronometro() {
+
+function comecaCronometro(){
     atualizaCronometro();
-    setInterval(atualizaCronometro, 1000);
+    setInterval(atualizaCronometro,1000);
 }
+
 comecaCronometro();
