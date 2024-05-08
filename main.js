@@ -40,11 +40,11 @@ function calculaTempo(tempoObjetivo) {
     else { return [0, 0, 0, 0]; }
 }
 function atualizaCronometro(){
-    document.getElementById("dias0").textContent = calculaTempo(tempos[0])[0];
-    document.getElementById("horas0").textContent = calculaTempo(tempos[0])[1];
-    document.getElementById("minutos0").textContent = calculaTempo(tempos[0])[2];
     
     for (let i=0; i<contadores.length;i++){
+        document.getElementById("dias"+i).textContent = calculaTempo(tempos[i])[0];
+        document.getElementById("horas"+i).textContent = calculaTempo(tempos[i])[1];
+        document.getElementById("minutos"+i).textContent = calculaTempo(tempos[i])[2];
         document.getElementById("segundos"+i).textContent = calculaTempo(tempos[i])[3];
         
     }
